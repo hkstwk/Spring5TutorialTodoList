@@ -20,6 +20,7 @@
         <cargo.version>1.8.2</cargo.version>
         <java.version>11</java.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <servlet-api.version>4.0.1</servlet-api.version>
     </properties>
 
 
@@ -51,6 +52,15 @@
             <artifactId>javax.annotation-api</artifactId>
             <version>${annotation-api.version}</version>
         </dependency>
+
+        <!-- javax servlet api -->
+        <dependency>
+            <groupId>javax.servlet</groupId>
+            <artifactId>javax.servlet-api</artifactId>
+            <version>${servlet-api.version}</version>
+            <scope>provided</scope>
+        </dependency>
+
     </dependencies>
 
 
