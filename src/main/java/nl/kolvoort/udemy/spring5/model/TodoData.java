@@ -23,6 +23,7 @@ public class TodoData {
         addItem(new TodoItem("third", "third details", LocalDate.now().plusMonths(2)));
         addItem(new TodoItem("fourth", "fourth details", LocalDate.now().plusMonths(3)));
         addItem(new TodoItem("fifth", "fifth details", LocalDate.now().plusMonths(4)));
+        addItem(new TodoItem("sixth", "sixth details", LocalDate.now().plusMonths(5)));
     }
 
     // public methods
