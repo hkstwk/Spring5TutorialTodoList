@@ -20,7 +20,7 @@
             <tr>
                 <th>Title</th>
                 <th>Deadline</th>
-                <th>Delete>/th>
+                <th>Delete</th>
             </tr>
 
 

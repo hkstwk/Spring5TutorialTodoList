@@ -10,9 +10,7 @@ import nl.kolvoort.udemy.spring5.util.ViewNames;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.ModelAttribute;
-import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.*;
 
 import java.time.LocalDate;
 
@@ -53,6 +51,15 @@ public class TodoController {
         log.info("todoItem from form = {}", todoItem);
         todoItemService.addItem(todoItem);
         return "redirect:/" + Mappings.ITEMS;
+    }
+
+    // http://localhost/todo-items/addItem
+    @GetMapping(Mappings.DELETE_ITEM)
+    public String deleteItem(@RequestParam int id){
+        log.info("deleting item with id = {}", id);
+        todoItemService.removeItem(id);
+        return "redirect:/" + Mappings.ITEMS;
+
     }
 
 }
